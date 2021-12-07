@@ -1,0 +1,19 @@
+Para verificar e/ou copiar backups de unidades sem precisar conectar na unidade.
+
+Conectar pelo fortclient no BOULEVARD BELÉM;
+
+Escolher a empresa que precisa
+rclone lsd gcloudwps:bkps-parkingwps-cloud/
+
+*lsd dá um ls exibindo os diretorios
+
+Após isso, a unidade
+rclone lsd gcloudwps:bkps-parkingwps-cloud/Brmalls/
+
+Após isso, remover o d (pois não há mais diretorio) e escolher a unidade
+rclone ls gcloudwps:bkps-parkingwps-cloud/Brmalls/Campinas-Shopping
+
+Para passar o arquivo para o pc local
+rclone copy gcloudwps:bkps-parkingwps-cloud/Multiplan/Jacarepagua-Shopping/arquivo_desejado.backup /instalacoes/
+
+Abrir o WinSCP e copiar de /instalacoes/ para meu notebook com o fortclient aberto
